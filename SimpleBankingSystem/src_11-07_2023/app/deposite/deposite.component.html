@@ -1,0 +1,36 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="./assets/logo01.png" weight="200" height="60" alt="" />
+    <img src="./assets/BANKLOGOPNG.png" weight="200" height="60" alt="" />
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  </div>
+  <a class="nav-link active" aria-current="page" clas="text-right" href="\dashboard">Admin Dashboard</a>
+</nav>
+<!-- nav end -->
+
+
+<div class="container mt-1 ">
+  <h3 class="text-center text-success">Account Holder Details</h3>
+  <div class="row " style="margin-left: 350px;">
+    <div class="col-12  mt-5">
+      <form class="row g-3 mb-3">
+        <label for="colFormLabel" class="col-sm-4 col-form-label col-form-label-sm">Account No</label>
+        <div class="col-auto">
+          <label for="staticEmail2" class="visually-hidden">Email</label>
+        </div>
+        <div class="col-auto">
+          <label for="inputPassword2" class="visually-hidden">Password</label>
+          <input type="text"  name="accountNo" class="form-control" id="inputPassword2" [(ngModel)]="accountNo" >
+        </div>
+        <div class="col-auto mb-3">
+          <button type="submit" class="btn btn-primary mb-3" (click)="updatedeposit(accountNo)">Search</button>
+        </div>
+      </form>
+      </div>
+    

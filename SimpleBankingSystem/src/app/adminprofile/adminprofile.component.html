@@ -1,0 +1,90 @@
+<div class="all">
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/logo01.png" weight="200" height="60" alt="" />
+            <img src="./assets/BANKLOGOPNG.png" weight="200" height="60" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+        <a class="nav-link active" aria-current="page" clas="text-right" href="\dashboard">Admin Dashboard</a>
+    </nav>
+    <!-- nav end -->
+
+
+    <div class="mt-2 d-flex justify-content-center">
+        <div class="row">
+            <h3 class=" text-success text-center mt-2">Admin Informations</h3>
+            <form class="d-flex justify-content-center">
+            <div class="mt-3">
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-4 col-form-label col-form-label-sm text-primary">Id</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control" name="id" id="colFormLabel"
+                            [(ngModel)]="id">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-4 col-form-label text-primary">Name</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="colFormLabel" name="adminUsername"
+                            [(ngModel)]="adminUsername">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="colFormLabelLg"
+                        class="col-sm-4 col-form-label col-form-label text-primary">Email</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="email"
+                            [(ngModel)]="email">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label text-primary">Date of
+                        Birth</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="dob"
+                            [(ngModel)]="dob">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="colFormLabelLg"
+                        class="col-sm-4 col-form-label col-form-label text-primary">Gender</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="gender"
+                            [(ngModel)]="gender">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="colFormLabelLg"
+                        class="col-sm-4 col-form-label col-form-label text-primary">Address</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="address"
+                            [(ngModel)]="address">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="colFormLabel"
+                        class="col-sm-4 col-form-label col-form-label-sm text-primary">Mobile</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="phone"
+                            [(ngModel)]="phone">
+                    </div>
+                </div>
+
+            </div>
+        </form>
+        </div>
+    </div>
+
+
+</div>

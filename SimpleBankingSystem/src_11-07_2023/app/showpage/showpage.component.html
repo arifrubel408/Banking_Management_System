@@ -1,0 +1,57 @@
+
+<div>
+  <button class="btn btn-success mt-2" (click)="insertData()">Create Account</button>
+
+</div>
+<h1 class="text-center" style="color: green;">Account Holders Information</h1>
+<div class="d-flex">
+  <div class="container row">
+    <table class="table table-success table-striped border-success table-bordered mt-2 p-5">
+      <thead>
+        <tr class="background-color bg-success text-center">
+          <th scope="col-5" style="color:rgb(21, 14, 59);">Sl</th>
+          <th scope="col-5" style="color:rgb(21, 14, 59);">Account No</th>
+          <th scope="col-5" style="color:rgb(21, 14, 59);">Micr No</th>
+          <th scope="col-5" style="color:rgb(21, 14, 59);">Pin</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">Account Type</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">Address</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">Gender</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">Initial Balance</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">Name</th>
+          <th scope="col-5" style="color:rgb(21, 14, 59);">DoB</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">Nationality</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">Religion</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">Mobile</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">SEC:Question</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">SEC: Answer</th>
+          <th scope="col-3" style="color:rgb(21, 14, 59);">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let st of holders; let i = index" class="text-center">
+          <th scope="row">{{i+1}}</th>
+          <td>{{st.accountNo}}</td>
+          <td>{{st.micrNo}}</td>
+          <td>{{st.pin}}</td>
+          <td>{{st.accType}}</td>
+          <td>{{st.address}}</td>
+          <td>{{st.gender}}</td>
+          <td>{{st.iniBlance}}</td>
+          <td>{{st.name}}</td>
+          <td>{{st.dob}}</td>
+          <td>{{st.nationality}}</td>
+          <td>{{st.religion}}</td>
+          <td>{{st.mobile}}</td>
+          <td>{{st.secQuestion}}</td>
+          <td>{{st.secAns}}</td>
+          <td>
+            <button class="btn btn-warning me-2" (click)="updateHolder(st.accountNo)">
+              <i class="fa-sharp fa-solid fa-pen-to-square"></i></button>
+            <button class="btn btn-danger" (click)="delHolder(st.accountNo)">
+              <i class="fa-solid fa-trash"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

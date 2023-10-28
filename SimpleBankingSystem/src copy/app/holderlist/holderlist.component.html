@@ -1,0 +1,89 @@
+<div class="container mt-5">
+  <div class="row">
+
+
+    <div class="col-4 mt-3">
+      <div class="form-group">
+        <div class="input-group">
+          <input type="text" id="search" name="search" placeholder="Account No" [(ngModel)]="accountNo">
+          <button type="submit" value="Search" class="search-button btn-success ms-2" style="color: rgb(10, 15, 1);" (click)="viewBalance()">Search</button>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-8 mt-3">
+      <div class="card mb-5" style="width: 39rem;">
+        <div class="row g-0">
+          <div class="col-3">
+            <img src="../../assets/{{img}}" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-9">
+            <div class="card-body" style="background:rgb(235, 227, 227);">
+              <h5 class="card-title text-success text-center">Holder Details</h5>
+              <table class="table table-borderd table-hover">
+                <tbody>
+                  <tr>
+                    <td>ACCOUNT NO :</td>
+                    <td>{{accountNo}}</td>
+                  </tr>
+                  <tr>
+                    <td>NAME :</td>
+                    <td>{{name}}</td>
+                  </tr>
+                  <tr>
+                    <td>ACC TYPE :</td>
+                    <td>{{accType}}</td>
+                  </tr>
+                  <tr>
+                    <td>GENDER :</td>
+                    <td>{{gender}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<div class="container">
+  <div class="mt-3">
+    <input type="checkbox" [(ngModel)]="t" />Show all Data
+  </div>
+</div>
+
+
+<!-- table -->
+<div class="container mt-3">
+
+  <div class="col-12">
+    <table class="table table-hover" style="background-color: rgb(242, 195, 195);" *ngIf="t">
+      <thead>
+        <tr>
+          <th scope="col">Date Of Birth</th>
+          <th scope="col">Address</th>
+          <th scope="col">Nationality</th>
+          <th scope="col">Religion</th>
+          <th scope="col">Mobile No</th>
+        </tr>
+      </thead>
+      <tbody style="background-color: rgb(213, 252, 177);">
+        <tr>
+          <td>{{dob}}</td>
+          <td>{{address}}</td>
+          <td>{{nationality}}</td>
+          <td>{{religion}}</td>
+          <td>{{mobile}}</td>
+
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+</div>

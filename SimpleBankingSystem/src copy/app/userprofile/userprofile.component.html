@@ -1,0 +1,109 @@
+<div class="all">
+
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/logo01.png" weight="200" height="60" alt="" />
+            <img src="./assets/BANKLOGOPNG.png" weight="200" height="60" alt="" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </div>
+        <a class="nav-link active" aria-current="page" clas="text-right" href="\user-dashboard">User Dashboard</a>
+    </nav>
+    <!-- nav end -->
+
+
+    <div class="mt-2 d-flex justify-content-center">
+        <div class="row m1">
+            <h3 class=" text-success text-center mt-2">User Informations</h3>
+             <form class="mt-2" style="margin-left: 60px;">
+                <div class="row mb-3 mt-2">
+                    <label for="colFormLabel" class="col-sm-3 col-form-label col-form-label-sm text-primary">Account
+                        No</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-control" name="accountNo" id="colFormLabel"
+                            [(ngModel)]="accountNo">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-3 col-form-label text-primary">Name</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="colFormLabel" name="name" [(ngModel)]="name">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="colFormLabel" class="col-sm-3 col-form-label text-primary">Balance</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control" id="colFormLabel" name="iniBlance"
+                            [(ngModel)]="iniBlance">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="colFormLabelLg" class="col-sm-3 col-form-label col-form-label text-primary">Account
+                        Type</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="accType"
+                            [(ngModel)]="accType">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="colFormLabelLg" class="col-sm-3 col-form-label col-form-label text-primary">Date of
+                        Birth</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="dob"
+                            [(ngModel)]="dob">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="colFormLabelLg"
+                        class="col-sm-3 col-form-label col-form-label text-primary">Gender</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="gender"
+                            [(ngModel)]="gender">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="colFormLabelLg"
+                        class="col-sm-3 col-form-label col-form-label text-primary">Address</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="address"
+                            [(ngModel)]="address">
+                    </div>
+                </div>
+
+                <div class="row mb-3">
+                    <label for="colFormLabel"
+                        class="col-sm-3 col-form-label col-form-label-sm text-primary">Mobile</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="mobile"
+                            [(ngModel)]="mobile">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="colFormLabel"
+                        class="col-sm-3 col-form-label col-form-label-sm text-primary">Religion</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="religion"
+                            [(ngModel)]="religion">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="colFormLabel"
+                        class="col-sm-3 col-form-label col-form-label-sm text-primary">Nationalaty</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control form-control" id="colFormLabel" name="nationality"
+                            [(ngModel)]="nationality">
+                    </div>
+                </div>
+             </form> 
+        </div>
+    </div>
+</div>

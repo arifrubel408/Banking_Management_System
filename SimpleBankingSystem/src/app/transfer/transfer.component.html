@@ -1,0 +1,110 @@
+<div class="all">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+      <img src="./assets/logo01.png" weight="200" height="60" alt="" />
+      <img src="./assets/BANKLOGOPNG.png" weight="200" height="60" alt="" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </div>
+    <a class="nav-link active" aria-current="page" clas="text-right" href="\dashboard">Admin Dashboard</a>
+  </nav>
+  <!-- nav end -->
+
+
+  <div class="container mt-1">
+    <h3 class="text-center text-success">Account Details</h3>
+
+    <div class="row mt-3">
+      <div class="col-6">
+        <h3 class="text-center text-primary">From</h3>
+        <div class="container">
+
+          <form>
+            <div class="form-group">
+              <div class="input-group">
+                <input type="text" id="search" name="search" placeholder="Account No" [(ngModel)]="accountNo1">
+                <button type="submit" value="Search" class="search-button shadow"
+                  (click)="updatedtransfer()">Search</button>
+              </div>
+            </div>
+            <div class="form-group mb-2">
+              <label for="name">Account No:</label>
+              <input type="text" id="accountNo" name="accountNo1" [(ngModel)]="accountNo1">
+            </div>
+            <div class="form-group mb-2">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name1" [(ngModel)]="name1">
+            </div>
+            <div class="form-group mb-2">
+              <label for="text">Date:</label>
+              <input type="date" id="text">
+            </div>
+            <div class="form-group mb-2">
+              <label for="text">Available Balance:</label>
+              <input type="text" id="text" name="iniBlance1" [(ngModel)]="iniBlance1">
+            </div>
+            <div class="form-group mb-2">
+              <label for="text">Transfer Amount:</label>
+              <input type="text" id="text" name="transfer1" [(ngModel)]="transfer1" (keyup)="deduct()">
+            </div>
+            <div class="form-group mb-2">
+              <label for="text">Total Amount:</label>
+              <input type="text" id="text" name="totalamt1" [(ngModel)]="totalamt1">
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+      <div class="col-6">
+        <h3 class="text-center text-primary">To</h3>
+        <div class="container">
+          <form>
+            <div class="form-group mb-2">
+              <div class="input-group">
+                <input type="text" id="search" name="search" placeholder="Account No" [(ngModel)]="accountNo2">
+                <button type="submit" value="Search" class="search-button shadow"
+                  (click)="updatedtransfer1()">Search</button>
+              </div>
+            </div>
+            <div class="form-group mb-2">
+              <label for="name">Account No:</label>
+              <input type="text" id="accountNo" name="accountNo2" [(ngModel)]="accountNo2">
+            </div>
+            <div class="form-group mb-2">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name2" [(ngModel)]="name2">
+            </div>
+            <div class="form-group mb-2">
+              <label for="text">Available Balance:</label>
+              <input type="text" id="text" name="iniBlance2" [(ngModel)]="iniBlance2">
+            </div>
+            <div class="form-group mb-2">
+              <label for="text">Receive Amount:</label>
+              <input type="text" id="text" name="transfer2" [(ngModel)]="transfer2" (keyup)="deduct()">
+            </div>
+            <div class="form-group mb-2">
+              <label for="text">Total Amount:</label>
+              <input type="text" id="text" name="totalamt" [(ngModel)]="totalamt2">
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+      <div class="btn btn-center mb-2">
+        <button class="btn btn-success shadow btn-md m-3" style="font-size: 130%;" type="button"
+          (click)="updateHolders()">Transfer</button>
+      </div>
+
+    </div>
+  </div>
+
+</div>

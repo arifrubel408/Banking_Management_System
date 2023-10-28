@@ -1,0 +1,81 @@
+
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="\home">Home</a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="\profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="\deposite">Deposite</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="\withdrawal">Withdrawal</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="\transfer">Transfer</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="\viewbalance">View Balance</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="\transection">Transection</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="\customerlist">Customer List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="\changepin">Change Pin</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="d-flex mt-5">
+    <div class="container row">
+      <div class="col-3 mt-5">
+        <button class="btn btn-success m-5">Add</button>
+        <!-- (click)="insertpage()" -->
+      </div>
+      <div class="col-9" style="background-color: rgb(245, 249, 248);">
+        <h1 class="text-center" style="color: green;">Account Holder`s List</h1>
+  
+        <table class="table table-success table-striped border-success table-bordered mt-3 p-5">
+          <thead>
+            <tr class="background-color bg-success text-center">
+              <!-- <th scope="col-3" style="color:rgb(21, 14, 59);">Sl</th> -->
+              <th scope="col-3" style="color:rgb(21, 14, 59);">Acc_No.</th>
+              <th scope="col-3" style="color:rgb(21, 14, 59);">Name</th>
+              <th scope="col-3" style="color:rgb(21, 14, 59);">DoB</th>
+              <th scope="col-3" style="color:rgb(21, 14, 59);">Acc_Type</th>
+              <th scope="col-3" style="color:rgb(21, 14, 59);">Gender</th>
+              <th scope="col-3" style="color:rgb(21, 14, 59);">Mobile</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="text-center">
+              <!-- *ngFor="let st of students; let i = index" -->
+              <!-- <th scope="row">{{i+1}}</th> -->
+              <!-- <td>{{st.accNo}}</td>
+              <td>{{st.userName}}</td>
+              <td>{{st.dob}}</td>
+              <td>{{st.accType}}</td>
+              <td>{{st.gender}}</td>
+              <td>{{st.mobile}}</td> -->
+              
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+

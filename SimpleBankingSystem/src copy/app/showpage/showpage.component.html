@@ -1,0 +1,69 @@
+
+<div>
+  <button class="btn btn-success mt-2" (click)="insertData()">Create Account</button>
+  <button class="btn btn-success mt-2" style="margin-left: 1800px;" (click)="goDashboard()">Dashboard</button>
+</div>
+<h1 class="text-center" style="color: green;">Account Holders Information</h1>
+<div class="d-flex">
+  <div class="container row">
+    <table class="table table-success table-striped border-success table-bordered mt-2 p-5" >
+      <thead class="bg-danger">
+        <tr class="background-color bg-success text-center">
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Sl</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Account No</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Micr No</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Pin</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Email</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Account Type</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Address</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Gender</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Initial Balance</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Name</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">DoB</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Nationality</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Religion</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Mobile</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">SEC:Question</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">SEC: Answer</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Status</th>
+          <!-- <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Image</th> -->
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Action</th>
+          <th  style="color:rgb(21, 14, 59); background-color: aquamarine;">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let st of holders; let i = index" class="text-center">
+          <th scope="row">{{i+1}}</th>
+          <td>{{st.accountNo}}</td>
+          <td>{{st.micrNo}}</td>
+          <td>{{st.pin}}</td>
+          <td>{{st.email}}</td>
+          <td>{{st.accType}}</td>
+          <td>{{st.address}}</td>
+          <td>{{st.gender}}</td>
+          <td>{{st.iniBlance}}</td>
+          <td>{{st.name}}</td>
+          <td>{{st.dob}}</td>
+          <td>{{st.nationality}}</td>
+          <td>{{st.religion}}</td>
+          <td>{{st.mobile}}</td>
+          <td>{{st.secQuestion}}</td>
+          <td>{{st.secAns}}</td>
+          <td>{{st.status}}</td>
+          <!-- <td>{{st.img}}</td> -->
+          <td >
+            <div class="btn-group mt-1" role="group" aria-label="Basic mixed styles example">
+            <button class="btn btn-warning me-2" (click)="updateStatus(st.accountNo, st.status)">
+              <i class="fa-solid fa-pen-to-square"></i></button>
+            <button class="btn btn-danger me-2" (click)="delHolder(st.accountNo)">
+              <i class="fa-solid fa-trash"></i></button>
+            </div>
+          </td>
+          <td> <button class="mt-2 {{st.status == 'active'? 'btn-danger' : 'btn-success'}} rounded pilled me-2" (click)="updateStatus(st.accountNo, st.status)"><i class="fa-solid {{st.status == 'active'? 'fa-solid fa-x' : 'fa-check'}}" ></i></button>
+            
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

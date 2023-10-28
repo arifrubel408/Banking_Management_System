@@ -1,0 +1,31 @@
+
+<section>
+  <div class="form-box">
+
+    <form (submit)="login()">
+      <h2>Login</h2>
+      <div class="inputbox">
+        <!-- <ion-icon name="person-outline"></ion-icon> -->
+         <!-- <i class="fa fa-user fa-2x"></i>  -->
+        <input type="text" id="accountno" name="accountno" [(ngModel)]="accountno">
+        <label for="">Account No:</label>
+      </div>
+      <div class="inputbox">
+       <!-- <i name="fa fa-lock fa-2x"></i> -->
+        <input type="password" id="pin" name="pin" [(ngModel)]="pin">
+        <label for="password">Pin No:</label>
+      </div>
+
+      <div class="forget">
+        <label for="checkbox"><input type="checkbox">Remember me </label>
+        <a href="#">Forget Password</a>
+      </div>
+
+      <button type="submit">Log In</button>
+      <div class="register">
+        <label>Don't have an account?</label> 
+          <a href="/insertpage">Register</a>
+      </div>
+    </form>
+  </div>
+</section> 

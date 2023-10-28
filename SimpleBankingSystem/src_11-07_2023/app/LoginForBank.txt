@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="index.css">
+<title>Login page</title>
+</head>
+<body>
+<section>
+    <div class="form-box">
+    <div class="form-value">
+    <form action="">
+    <h2>Login</h2>
+    
+
+    </form>
+    </div>
+    </div>
+
+</body>
+</html>

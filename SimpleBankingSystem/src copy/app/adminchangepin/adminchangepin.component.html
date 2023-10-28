@@ -1,0 +1,29 @@
+
+<div class="container mt-1">
+    <h2 class="text-center" style="color:blue;font-weight: 500; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Admin Change Password</h2>
+    <form>
+      <div class="form-group mb-2">
+        <label for="name" style="color: rgb(7, 145, 7); font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">ID No:</label>
+        <input type="text" id="id" name="id" [(ngModel)]="id">
+      </div>
+      <div class="form-group mb-2">
+        <label for="name" style="color: rgb(7, 145, 7); font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Old Password:</label>
+        <input type="text" id="oldPassword" name="oldPassword" [(ngModel)]="oldPassword">
+      </div>
+      <div class="form-group mb-2">
+        <label for="text" style="color: rgb(7, 145, 7); font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">New Password:</label>
+        <input type="text" id="newPassword"  name="newPassword"[(ngModel)]="newPassword" >
+      </div>
+      <div class="form-group mb-2">
+        <label for="text" style="color: rgb(7, 145, 7); font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">Re-type Password:</label>
+        <input type="text" id="retypePassword" name="retypePassword" [(ngModel)]="retypePassword">
+      </div>
+    </form>
+    <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+      <button class="btn btn-success shadow ms-5" style="font-size: 130%; color: rgb(241, 229, 229);" type="button"
+        (click)="changePassword() ">Update</button>
+        <button class="btn btn-primary shadow ms-5" style="font-size: 130%; color: rgb(241, 229, 229);" type="button"
+        (click)="goHome() ">Home</button>
+    </div>
+  </div>
+  

@@ -1,0 +1,51 @@
+<div class="all">
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./assets/logo01.png" weight="200" height="60" alt="" />
+        <img src="./assets/BANKLOGOPNG.png" weight="200" height="60" alt="" />
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </div>
+      <a class="nav-link active" aria-current="page" clas="text-right" href="\dashboard">Admin Dashboard</a>
+    </nav>
+    <!-- nav end -->
+    
+    
+    
+    
+    <div class="container">
+      <h2 class="text-center">Account Holder Details</h2>
+      <form>
+        <div class="form-group">
+          <div class="input-group">
+            <input type="text" id="search" name="search" placeholder="Account No" [(ngModel)]="accountNo">
+            <button type="submit" value="Search" class="search-button" (click)="viewBalance()">Search</button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="name">Account No:</label>
+          <input type="text" id="accountNo" name="accountNo" [(ngModel)]="accountNo">
+        </div>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" [(ngModel)]="name">
+        </div>
+        <div class="form-group">
+          <label for="text">Available Balance:</label>
+          <input type="text" id="text" name="iniBlance" [(ngModel)]="iniBlance">
+        </div>
+    
+      </form>
+    </div>
+    
+    
+    
+    
+    
+    </div>
+    

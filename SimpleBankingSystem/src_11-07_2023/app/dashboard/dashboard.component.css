@@ -1,0 +1,19 @@
+.sidebar {
+    height: 90vh;
+    position: fixed;
+    top: 63px;
+    left: 0;
+    z-index: 1;
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 60px;
+  }
+
+  .sidebar .nav-link i {
+    margin-right: 10px;
+  }
+
+  .content {
+    margin-left: 250px;
+    padding: 20px;
+  }

@@ -1,0 +1,53 @@
+.sidebar {
+    height: 90vh;
+    position: fixed;
+    top: 61px;
+    left: 0;
+    z-index: 1;
+    background-color: #343a40;
+    color: #fff;
+    padding-top: 35px;
+  }
+
+  .sidebar .nav-link i {
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .dropdown-item{
+    background-color: rgb(247, 192, 231);
+  }
+  .dropdown-item:hover{
+    background-color: bisque;
+  }
+
+  .content {
+    margin-left: 175px;
+    padding: 5px;
+  }
+
+  /* 
+  side nav end */
+  
+    
+  /* card */
+    
+   .dashboard-card {
+    background-color: rgb(22, 199, 108);
+    border: 1px solid rgb(243, 203, 203);
+    border-radius: 5px;
+    padding: 20px;
+    margin-left: 100px;
+  }
+  .dashboard-card .card-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    color: rgb(186, 69, 14);
+  }
+  .dashboard-card .card-value {
+    font-size: 24px;
+    text-align: center;
+    color: rgb(0, 81, 255);
+    font-weight: 500;
+  }
+   

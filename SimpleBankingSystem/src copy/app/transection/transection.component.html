@@ -1,0 +1,62 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">
+    <img src="./assets/logo01.png" weight="200" height="60" alt="" />
+    <img src="./assets/BANKLOGOPNG.png" weight="200" height="60" alt="" />
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+  </div>
+  <a class="nav-link active" aria-current="page" clas="text-right" href="\dashboard">Admin Dashboard</a>
+</nav>
+
+
+
+<div class="container justify-content-center mt-5">
+  <div class="input-group mb-3">
+    <form action="">
+      <label for="date" class="ms-3 text-success" style="font-weight:500">From Date:</label>
+      <input type="date" class="ms-3" id="fromDate" name="fromDate" [(ngModel)]="fromDate">
+      <label for="date" class="ms-3 text-success" style="font-weight:500">To Date:</label>
+      <input type="date" class="ms-3" id="toDate" name="toDate" [(ngModel)]="toDate">
+      <button (click)="search()" value="Search" class="search-button btn-primary ms-3"
+        style="color: rgb(249, 213, 8); font-weight: 400;">Search</button>
+        <button class="search-button btn-secondary"
+        style="color: rgb(236, 239, 240); margin-left: 400px; font-weight: 500;" (click)=" generatePdf()">Print</button>
+    </form>
+  </div>
+</div>
+
+
+<h1 class="text-center" style="color: green;">Transaction Statement</h1>
+<div class="container">
+  <div class="container row">
+    <table id="dataTable" class="table table-success table-striped border-success table-bordered mt-2 p-5">
+      <thead>
+        <tr class="background-color bg-success text-center">
+          <th style="color:rgb(21, 14, 59); background-color: aquamarine;">SL </th>
+          <th style="color:rgb(21, 14, 59); background-color: aquamarine;">Transaction Id</th>
+          <th style="color:rgb(21, 14, 59); background-color: aquamarine;">Account No</th>
+          <th style="color:rgb(21, 14, 59); background-color: aquamarine;">Type</th>
+          <th style="color:rgb(21, 14, 59); background-color: aquamarine;">Amount</th>
+          <th style="color:rgb(21, 14, 59); background-color: aquamarine;">Date</th>
+          <th style="color:rgb(21, 14, 59); background-color: aquamarine;">Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let st of transections; let i = index" class="text-center">
+          <th scope="row">{{i+1}}</th>
+          <td>{{st.t_id}}</td>
+          <td>{{st.t_account}}</td>
+          <td>{{st.t_type}}</td>
+          <td>{{st.t_amount}}</td>
+          <td>{{st.t_date}}</td>
+          <td>{{st.t_notes}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

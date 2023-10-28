@@ -1,0 +1,47 @@
+/* You can add global styles to this file, and also import other style files */
+.rainbow{
+    animation: colorRotate 10s linear 0s infinite;
+}
+@keyframes colorRotate{
+    from{
+        color:red;
+    }30%{
+        color:orange;
+    }35%{
+        color:yellow;
+    }45%{
+        color: green;
+    }55%{
+        color: blue;
+    }35%{
+        color: indigo;
+    }40%{
+        color: violet;
+    }
+} 
+    
+.rainbow1{
+    animation: colorRotate 6s linear 0s infinite;
+}
+@keyframes colorRotate{
+    from{
+        color:rgb(70, 223, 234);
+    }20%{
+        color:orange;
+    }35%{
+        color:rgb(20, 209, 70);
+    }25%{
+        color: green;
+    }55%{
+        color: blue;
+    }45%{
+        color: indigo;
+    }20%{
+        color: rgb(234, 34, 34);
+    }50%{
+        color: rgb(221, 78, 216);
+    }
+} 
+    body{
+        font-family: 'Poppins', sans-serif;
+    }

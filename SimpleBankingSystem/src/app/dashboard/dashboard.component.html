@@ -1,0 +1,110 @@
+<nav class="navbar navbar-expand-lg" style="background-color: rgb(139, 243, 217);">
+  <div class="container">
+    <a class="navbar-brand" href="\dashboard">{{adm.adminUsername}} Dashboard</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+    </div>
+    <div class="dropdown">
+      <a href="#" class="dropdown-toggle user textwarning" data-bs-toggle="dropdown"><img
+          src="../../assets/{{adm.img}}" alt="mdo" width="40" height="40" class="rounded-circle"></a>
+        <div class="dropdown-menu dropstart shadow">
+          <a href="\insertadmin" class="dropdown-item ps-3 pt-2">Sign UP</a>
+          <a href="#" class="dropdown-item ps-3 pt-2" (click)="logOut()">Log out</a>
+        </div>
+    </div>
+  </div>
+</nav>
+
+
+
+<div class="sidebar shadow">
+  <ul class="nav flex-column">
+    <li class="nav-item">
+      <a href="#" class="user textwarning ms-4" ><img
+        src="../../assets/{{adm.img}}" alt="mdo" width="100" height="100" class="rounded-circle"></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="\dashboard">
+        <i class="fas fa-tachometer-alt"></i>
+        Dashboard
+      </a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="\holderlist">
+        <i class="fas fa-users"></i>
+        Users List
+      </a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <i class="fas fa-square"></i>
+        Operations
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="\insert">Create Account</a></li>
+        <li><a class="dropdown-item" href="\viewbalance">View Balance</a></li>
+        <li><a class="dropdown-item" href="\deposite">Deposite</a></li>
+        <li><a class="dropdown-item" href="\transfer">Transfer</a></li>
+        <li><a class="dropdown-item" href="\withdrawal">Withdrawal</a></li>
+        <li><a class="dropdown-item" href="\transection">Transection</a></li>
+        <li><a class="dropdown-item" href="\showpage">View Holder Details</a></li>
+      </ul>
+    </li>
+    <li class="nav-item">
+      <a style="cursor: pointer;" class="nav-link" (click)="adminShow()">
+        <i class="fas fa-user"></i>
+        Admin Profile
+      </a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+        aria-expanded="false">
+        <i class="fas fa-cogs"></i>
+        Settings
+      </a>
+      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <li><a class="dropdown-item" href="\admin-password">Admin Password</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+
+
+
+<!-- Main Contenr -->
+<div class="container mt-2">
+  <div class="row">
+    <div class="col-md-4">
+      <div class="dashboard-card shadow">
+        <div class="card-title d-block justify-content-center shadow">Total Account No</div>
+        <div class="card-value"> <i class="fas fa-users"></i> {{rowcount.rowCount}}</div>
+      </div>
+    </div>
+    
+
+    <div class="col-md-4">
+      <div class="dashboard-card shadow">
+        <div class="card-title d-block justify-content-center shadow">Total Admin No</div>
+        <div class="card-value"> <i class="fas fa-users"></i> {{row.rowCount}}</div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="dashboard-card shadow">
+        <div class="card-title d-block justify-content-center shadow">Messages</div>
+        <div class="card-value"> <i class="fas fa-message"></i> 03</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- line Chart -->
+<div class="mt-5" style="margin-left: 200px;">
+  <canvasjs-chart [options]="chartOptions" [styles]="{width: '60%', height:'250px'}"></canvasjs-chart>    
+</div>  

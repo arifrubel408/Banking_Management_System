@@ -1,0 +1,93 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="./assets/logo01.png" weight="200" height="60" alt="" />
+        <img src="./assets/BANKLOGOPNG.png" weight="200" height="60" alt="" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </div>
+    <a class="nav-link active" aria-current="page" clas="text-right" href="\dashboard">Admin Dashboard</a>
+</nav>
+
+
+
+<div class="container mt-2">
+    <div class="row mx-5">
+        <h3 class="text-center text-success mt-2">Create Admin Account</h3>
+        <div class="col-6 m-0 mt-3">
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-4 col-form-label col-form-label-sm">ID No.</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" name="id" id="colFormLabel" [(ngModel)]="id">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-4 col-form-label col-form-label-sm">Name</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="adminUsername" [(ngModel)]="adminUsername">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Password</label>
+                <div class="col-sm-6">
+                    <input type="password" class="form-control form-control" id="colFormLabel" name="password" [(ngModel)]="password">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Email</label>
+                <div class="col-sm-6">
+                    <input type="email" class="form-control form-control" id="colFormLabel" name="email"
+                        [(ngModel)]="email">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 mt-3">
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-4 col-form-label">Date of Birth</label>
+                <div class="col-sm-6">
+                    <input type="date" class="form-control" id="colFormLabel" name="dob" [(ngModel)]="dob">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Address</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="address"
+                        [(ngModel)]="address">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Gender</label>
+                <div class="col-sm-6">
+                    <input type="radio" id="male" name="gender" value="Male" [(ngModel)]="gender">
+                    <label for="male" class="mx-2">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" [(ngModel)]="gender">
+                    <label for="female" class="mx-2">Female</label>
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Mobile No.</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="pnone"
+                        [(ngModel)]="phone">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Image.</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="img"
+                        [(ngModel)]="img">
+                </div>
+            </div>
+        </div>
+        <div class="btn btn-center mt-3">
+            <button class="btn btn-success shadow btn-md m-3" (click)="saveAdmin()" style="font-size: 130%; color: rgb(165, 82, 13);"
+                type="button">Create</button>
+        </div>
+    </div>
+</div>

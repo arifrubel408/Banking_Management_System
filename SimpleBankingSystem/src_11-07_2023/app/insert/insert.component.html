@@ -1,0 +1,128 @@
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">
+        <img src="./assets/logo01.png" weight="200" height="60" alt=""/>
+        <img src="./assets/BANKLOGOPNG.png" weight="200" height="60" alt="" />
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    </div>
+    <a class="nav-link active" aria-current="page" clas="text-right" href="\dashboard">Admin Dashboard</a>
+</nav>
+
+
+
+<div class="container mt-3">
+    <div class="row mx-5">
+        <h3 class="text-center text-success">Create Account</h3>
+        <div class="col-6 m-0 mt-5">
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-4 col-form-label col-form-label-sm">Account No.</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" name="accountNo" id="colFormLabel" [(ngModel)]="accountNo">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-4 col-form-label">MICR No.</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control" id="colFormLabel" name="micrNo" [(ngModel)]="micrNo">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Pin</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="pin" [(ngModel)]="pin">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Account Type</label>
+                <div class="col-sm-6">
+                    <select id="inputState" class="form-select form-control" name="accType" [(ngModel)]="accType">
+                        <option value="">Select</option>
+                        <option value="Current">Current</option>
+                        <option value="Savings">Savings</option>
+                        <option value="Fixed Deposite">Fixed Deposite</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Address</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="address" [(ngModel)]="address">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Gender</label>
+                <div class="col-sm-6">
+                    <input type="radio" id="male" name="gender" value="Male" [(ngModel)]="gender">
+                    <label for="male" class="mx-2">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" [(ngModel)]="gender">
+                    <label for="female" class="mx-2">Female</label>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Initial Balance</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="iniBlance" [(ngModel)]="iniBlance">
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 mt-5">
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-4 col-form-label col-form-label-sm">Name</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="name" [(ngModel)]="name">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabel" class="col-sm-4 col-form-label">Date of Birth</label>
+                <div class="col-sm-6">
+                    <input type="date" class="form-control" id="colFormLabel" name="dob" [(ngModel)]="dob">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Nationality</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="nationality" [(ngModel)]="nationality">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Religion</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="religion" [(ngModel)]="religion">
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Mobile No.</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="mobile" [(ngModel)]="mobile">
+                </div>
+            </div>
+
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Security Questions</label>
+                <div class="col-sm-6">
+                    <select id="inputState" class="form-select form-control" name="secQuestion" [(ngModel)]="secQuestion">
+                        <option value="">Select</option>
+                        <option value="What is your nick name?">What is your nick name?</option>
+                        <option value="What is your mother`s occupation?">What is your mother`s occupation?</option>
+                        <option value="What is your favourite sports?">What is your favourite sports?</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="colFormLabelLg" class="col-sm-4 col-form-label col-form-label">Security Q.Answer</label>
+                <div class="col-sm-6">
+                    <input type="text" class="form-control form-control" id="colFormLabel" name="sceAns" [(ngModel)]="secAns">
+                </div>
+            </div>
+        </div>
+        <div class="btn btn-center mt-3">
+            <button class="btn btn-warning shadow btn-md m-3" (click)="saveHolder()" style="font-size: 130%;" type="button">Create</button>
+        </div>
+    </div>
+</div>

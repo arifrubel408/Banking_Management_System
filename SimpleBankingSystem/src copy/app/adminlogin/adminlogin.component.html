@@ -1,0 +1,32 @@
+
+<section>
+    <div class="form-box">
+  
+      <form (submit)="login1()">
+        <h2>Admin Login</h2>
+        <div class="inputbox">
+          <!-- <ion-icon name="person-outline"></ion-icon> -->
+           <!-- <i class="fa fa-user fa-2x"></i>  -->
+          <input type="email" id="email" name="email" [(ngModel)]="email">
+          <label for="">Email</label>
+        </div>
+        <div class="inputbox">
+         <!-- <i name="fa fa-lock fa-2x"></i> -->
+          <input type="password" id="password" name="password" [(ngModel)]="password">
+          <label for="password">Password:</label>
+        </div>
+  
+        <div class="forget">
+          <label for="checkbox"><input type="checkbox">Remember me </label>
+          <a href="#">Forget Password</a>
+        </div>
+  
+        <button type="submit">Log In</button>
+        <div class="register">
+          <label>Don't have an account?</label> 
+            <a href="\insertadmin">Register Admin</a>
+          
+        </div>
+      </form>
+    </div>
+  </section> 
