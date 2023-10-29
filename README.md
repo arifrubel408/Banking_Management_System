@@ -1,4 +1,3 @@
-# Banking_Management_System
 # Banking System HTML Project
 
 This is an HTML project that simulates a banking system. It includes various features such as admin and user interfaces, transaction tables, deposit records, transfer tracking, withdrawal functionality, admin dashboard, customer dashboard, Jasper reports integration, and PDF generation.
@@ -44,9 +43,9 @@ This project is licensed under the [MIT License](LICENSE).
 
 ## Acknowledgments
 
-- Special thanks to [Your Name] for [specific contributions or inspiration].
+- Special thanks to [Mahfuz Ullah] for [specific contributions or inspiration].
 
 ## Contact
 
-If you have any questions or need assistance, please contact [Your Email Address].
+If you have any questions or need assistance, please contact [arifrubel408@gmail.com].
 
